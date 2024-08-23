@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Para garantir que o body ocupe toda a altura da viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Cor de fundo para melhor visualização */
+}
+
+.container {
+    position: relative; /* Cria um contexto de posicionamento para os elementos filhos */
+    width: 200px;
+    height: 200px;
+}
+
+.box1, .box2, .box3 {
+    position: absolute; /* Posiciona as caixas no mesmo ponto */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box1 {
+    background-color: #3498db; /* Azul */
+    z-index: 1; /* Caixa com menor z-index */
+}
+
+.box2 {
+    background-color: #2ecc71; /* Verde */
+    z-index: 2; /* Caixa no meio */
+}
+
+.box3 {
+    background-color: #e74c3c; /* Vermelho */
+    z-index: 3; /* Caixa com maior z-index */
+}
